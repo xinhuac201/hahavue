@@ -1,0 +1,468 @@
+/*
+Theme Name: 54traveler
+Theme URI: http://www.54traveler.com
+Description: è¿™æ˜¯ç¨»è‰äººä¸»é¡µä¸»é¢˜
+Version: 1.0
+Author: æ²ˆå˜‰æ€¡
+Author URI: JiaYi Shen
+Tags: 54traveler, travel, trip
+*/
+
+/* ---------------------
+** ------- common --------
+*/
+body {
+    font: 14px/1.8 "hiragino sans gb", "Microsoft YaHei", \9ED1\4F53, \5b8b\4f53, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.brand-red {
+    color: #ad0711;
+}
+
+.background-red {
+    background-color: #ad0711;
+}
+
+/* -----------------------
+** ------ carousel --------
+*/
+.index-slide p {
+    margin: 0;
+}
+
+.index-slide .carousel-control {
+    bottom: 66px;
+}
+
+@media (max-width: 769px) {
+    .index-slide h4 {
+        height: 36px;
+        line-height: 1.2;
+    }
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .carousel-control.left, .carousel .carousel-control.right {
+    background: none;
+}
+
+.carousel .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+/* -----------------------
+** ------ trip --------
+*/
+.trip-description {
+    border: 1px solid #ddd;
+    border-top: 0;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+.trip-description a {
+    color: #000;
+}
+
+.trip-description .redbar {
+    display: inline-block;
+    width: 12px;
+    background: #ad0711;
+    float: left;
+    height: 43px;
+    margin: 10px;
+}
+
+.trip-description small {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #31708f;
+}
+
+.trip-tab {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: 2px 11px;
+    font-size: 13px;
+}
+
+
+
+@media (min-width: 768px) {
+    .trip-description small {
+        padding-top: 7px;
+        float: right;
+        display: inline;
+    }
+
+    .shouxuan-tab {
+        font-size: 14px;
+        background-position: -43px -280px;
+        width: 50px;
+        height: 47px;
+        padding: 7px 0;
+    }
+}
+
+/* -----------------------
+** ------ whyUs --------
+*/
+#whyUsContent {
+    position: relative;
+    margin-top: 10px;
+    /*display: none; */
+}
+
+
+#whyUsContent .right-arrow {
+    background-position: -43px -80px;
+}
+
+#whyUsContent .carousel-indicators li {
+    border-color: #ad0711;
+}
+
+#whyUsContent .carousel-indicators .active {
+    background-color: #ad0711;
+}
+
+#whyUsContent .carousel-control {
+    width: 5%;
+}
+
+
+
+@media (max-width: 767px) {
+    #whyUsContent .carousel-indicators {
+        bottom: -10px;
+    }
+
+    #whyUsContent {
+        padding-top: 20px;
+    }
+}
+
+/* ---------------------
+** ------ menubar --------
+*/
+#menubar .menulist {
+    font: bold 16px å¾®è½¯é›…é»‘, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+#menubar .menulist a {
+    color: #666;
+    width: 100%;
+}
+
+#menubar .menulist > li {
+    margin-top: 10px;
+    position: relative;
+    float: left;
+}
+
+#menubar .menulist > li.logo {
+    width: 260px;
+}
+
+#menubar .menulist > li.logo img {
+    margin-top: -53px;
+    width: 185px;
+}
+
+#menubar .menulist > li:hover {
+    cursor: pointer;
+}
+
+#menubar .menulist > li:hover > a {
+    color: #ad0711;
+}
+
+#menubar .menulist li.menuitem {
+    width: 120px;
+    text-align: center;
+    border-right: 2px solid #bbb;
+}
+
+#menubar .menulist .dropdown-content {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    z-index: 1000;
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    line-height: 2.8;
+}
+
+#menubar .menulist .dropdown-content li:hover {
+    background-color: #ad0711;
+    cursor: pointer;
+}
+
+#menubar .menulist .dropdown-content a:hover li {
+    color: #fff;
+}
+
+#menubar .menulist > li:hover .dropdown-content {
+    display: block;
+}
+
+#menubar .glyphicon {
+    padding-top: 5px;
+    color: #fff;
+}
+
+/* ---------------------
+** ------ video --------
+*/
+.video-box video {
+    width: 100%;
+    background-color: #000;
+}
+
+.video-box {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .playPause {
+        position: absolute;
+        bottom: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+/* ---------------------
+** ------ fixed --------
+*/
+#fixed-container {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1000;
+    color: #fff;
+}
+
+#fixed-container .fixed-item {
+    background-color: rgba(190, 190, 190, 0.7);
+    padding: 10px 10px 5px 10px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+
+#fixed-container #backToTop a {
+    background-position: 0 -178px;
+}
+
+#fixed-container #fix-code {
+    background-position: 0 0;
+}
+
+#fixed-container #fix-code-wx {
+    background-position: 0 -213px;
+}
+
+/* ---------------------
+** ------ bottom --------
+*/
+.bottom-container {
+    margin-bottom: 50px;
+}
+
+.bottom-container a {
+    color: #000;
+}
+
+.bottom-container .bottom-item {
+    position: relative;
+    border-right: 2px dotted #ccc;
+    padding-bottom: 10px;
+}
+
+.bottom-container .bottom-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bottom-item h2 {
+    font-size: 20px;
+}
+
+
+@media (min-width: 992px) {
+    .bottom-container .bottom-item {
+        background-size: 88% 40%;
+        padding: 10px;
+    }
+
+    .bottom-item h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bottom-container .bottom-item {
+        background-size: 82% 40%;
+        padding: 10px 20px;
+    }
+
+    .bottom-container .bottom-item p {
+        right: 40px;
+    }
+}
+
+/* ---------------------
+** ------ footer--------
+*/
+footer {
+    background-color: #9b0000;
+    color: #fff;
+    padding: 15px 0 35px 0;
+}
+
+footer ul li {
+    border-right: 1px solid #ddd;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+footer ul li:last-child {
+    border-right: 0;
+}
+
+footer ul li:first-child a {
+    margin-left: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    margin: 0 15px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer ul li:last-child a:hover {
+    text-decoration: none;
+}
+
+
+footer #footer-sina {
+    background-position: 0 -102px;
+}
+
+footer #footer-douban {
+    background-position: 0 -43px;
+}
+
+footer #footer-ximalaya {
+    background-position: 0 -254px;
+}
+
+@media (min-width: 992px) {
+    footer {
+        padding: 60px 0 70px 0;
+    }
+}
+
+/* ---------------------
+** ----- sidebar -------
+*/
+.sb-slidebar {
+    background-color: #ad0711;
+    border-left: 1px solid #fff;
+}
+
+.sidemenu li {
+    line-height: 3.2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidemenu li a {
+    color: #fff;
+}
+
+.sidemenu .fa-lg {
+    width: 35%;
+    padding-left: 15%;
+}
+
+.sidemenu .sidemenu-in {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.sidemenu .sidemenu-in li {
+    line-height: 2.6;
+    border: none;
+}
+
+.sidemenu .fa-chevron-down {
+    margin-left: 35%;
+}
